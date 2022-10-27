@@ -16,6 +16,7 @@ import PieChartOutlinedIcon from "@mui/icons-material/PieChartOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import ImgAvatar from "../../images/avatar.jpeg";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -91,10 +92,14 @@ const Sidebar = () => {
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
                   alt="profile-user"
-                  width="100px"
-                  height="100px"
-                  src={"../../images/avatar.jpeg"}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                  width="75px"
+                  height="75px"
+                  src={ImgAvatar}
+                  style={{
+                    cursor: "pointer",
+                    border: `0.5px solid ${colors.grey[100]}`,
+                    borderRadius: "50%",
+                  }}
                 />
               </Box>
               <Box textAlign="center">
